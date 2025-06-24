@@ -14,34 +14,37 @@ const Hero: React.FC = () => {
       <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
         <div className="animate-fade-in-up">
           {/* Profile Picture Placeholder */}
-          <div className="w-32 h-32 mx-auto mb-8 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 flex items-center justify-center text-white text-4xl font-bold animate-fade-in-up">
-            RN
+          <div>
+            <img
+              src="../../public/Rishi (2).jpg"  // Replace with your actual image path or URL
+              alt="Profile"
+              className="w-60 h-70 mx-auto mb-10 mt-20 rounded-full flex items-center justify-center animate-fade-in-up hero-photo"   />
           </div>
-          
+
           <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold text-gray-900 mb-6">
             Hi, I'm{' '}
             <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 bg-clip-text text-transparent">
               Rishi Kesh Nepal
             </span>
           </h1>
-          
+
           <p className="text-xl sm:text-2xl text-gray-600 mb-4 animate-fade-in-up animation-delay-200">
-            Full Stack Developer & Ethical Hacker
+            Full Stack Developer
           </p>
-          
+
           <p className="text-lg text-gray-500 mb-8 max-w-2xl mx-auto animate-fade-in-up animation-delay-400">
-            Passionate BCA student at Asian School of Management and Technology with experience 
+            Passionate BCA student at Asian School of Management and Technology with experience
             in building responsive web applications using MERN stack, PHP, MySQL, and modern web technologies.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12 animate-fade-in-up animation-delay-600">
-            <button 
+            <button
               onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
               className="px-8 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300"
             >
               View My Work
             </button>
-            <button 
+            <button
               onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
               className="px-8 py-3 border-2 border-gray-300 text-gray-700 rounded-full font-semibold hover:border-blue-600 hover:text-blue-600 transition-all duration-300"
             >

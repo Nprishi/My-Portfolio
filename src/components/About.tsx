@@ -22,7 +22,7 @@ const About: React.FC = () => {
             hasIntersected ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'
           }`}>
             <img 
-              src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=600" 
+              src="../../public/Rishi (4).jpg" 
               alt="Developer workspace" 
               className="rounded-2xl shadow-2xl mb-8"
             />
