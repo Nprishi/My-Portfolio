@@ -46,7 +46,7 @@ const Contact: React.FC = () => {
       icon: Linkedin,
       title: 'Linkedin Profile',
       value: 'Rishi Kesh Nepal',
-      href: 'www.linkedin.com/in/rishi-kesh-nepal-558631291'
+      href: 'https://www.linkedin.com/in/rishi-kesh-nepal-558631291/'
     },
     {
       icon: MapPin,
@@ -88,7 +88,7 @@ const Contact: React.FC = () => {
                     <h4 className="text-lg font-semibold text-gray-900">{info.title}</h4>
                     <a
                       href={info.href}
-                      className="text-gray-600 hover:text-blue-600 transition-colors duration-300"
+                      className="text-blue-400 hover:text-blue-600 transition-colors duration-300"
                     >
                       {info.value}
                     </a>
