@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Send, CheckCircle } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, CheckCircle, Linkedin } from 'lucide-react';
 import { useIntersectionObserver } from '../hooks/useIntersectionObserver';
 
 const Contact: React.FC = () => {
@@ -33,7 +33,7 @@ const Contact: React.FC = () => {
     {
       icon: Mail,
       title: 'Email',
-      value: 'rishikesh@email.com',
+      value: 'rishikeshnepal42@email.com',
       href: 'mailto:rishikesh@email.com'
     },
     {
@@ -43,19 +43,24 @@ const Contact: React.FC = () => {
       href: 'tel:+9779825939042'
     },
     {
+      icon: Linkedin,
+      title: 'Linkedin Profile',
+      value: 'Rishi Kesh Nepal',
+      href: 'www.linkedin.com/in/rishi-kesh-nepal-558631291'
+    },
+    {
       icon: MapPin,
       title: 'Location',
       value: 'Jhapa, Nepal',
-      href: '#'
+      href: 'https://maps.app.goo.gl/APx4HPUCDmea5DU68'
     }
   ];
 
   return (
     <section id="contact" ref={ref} className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className={`text-center mb-16 transition-all duration-1000 ${
-          hasIntersected ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-        }`}>
+        <div className={`text-center mb-16 transition-all duration-1000 ${hasIntersected ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+          }`}>
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Get In Touch</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Let's discuss how we can work together to bring your ideas to life
@@ -64,13 +69,12 @@ const Contact: React.FC = () => {
 
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact Information */}
-          <div className={`transition-all duration-1000 delay-200 ${
-            hasIntersected ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'
-          }`}>
+          <div className={`transition-all duration-1000 delay-200 ${hasIntersected ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'
+            }`}>
             <h3 className="text-2xl font-bold text-gray-900 mb-6">Let's start a conversation</h3>
             <p className="text-gray-600 mb-8">
-              I'm always interested in new opportunities and exciting projects. 
-              Whether you have a question about my work, want to collaborate, or just want to say hi, 
+              I'm always interested in new opportunities and exciting projects.
+              Whether you have a question about my work, want to collaborate, or just want to say hi,
               I'll try my best to get back to you!
             </p>
 
@@ -82,7 +86,7 @@ const Contact: React.FC = () => {
                   </div>
                   <div className="ml-4">
                     <h4 className="text-lg font-semibold text-gray-900">{info.title}</h4>
-                    <a 
+                    <a
                       href={info.href}
                       className="text-gray-600 hover:text-blue-600 transition-colors duration-300"
                     >
@@ -98,8 +102,8 @@ const Contact: React.FC = () => {
                 Available for freelance work
               </h4>
               <p className="text-gray-600">
-                I'm currently available for freelance projects and full-time opportunities. 
-                Let's create something amazing together! I specialize in MERN stack development, 
+                I'm currently available for freelance projects and full-time opportunities.
+                Let's create something amazing together! I specialize in MERN stack development,
                 PHP applications, and modern web technologies.
               </p>
             </div>
@@ -109,16 +113,15 @@ const Contact: React.FC = () => {
                 Open to collaboration
               </h4>
               <p className="text-gray-600">
-                Interested in hackathons, open source contributions, and tech community events. 
+                Interested in hackathons, open source contributions, and tech community events.
                 Always eager to learn and share knowledge with fellow developers.
               </p>
             </div>
           </div>
 
           {/* Contact Form */}
-          <div className={`transition-all duration-1000 delay-400 ${
-            hasIntersected ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'
-          }`}>
+          <div className={`transition-all duration-1000 delay-400 ${hasIntersected ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'
+            }`}>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid sm:grid-cols-2 gap-6">
                 <div>
@@ -188,11 +191,10 @@ const Contact: React.FC = () => {
               <button
                 type="submit"
                 disabled={isSubmitted}
-                className={`w-full py-3 px-6 rounded-lg font-semibold transition-all duration-300 ${
-                  isSubmitted
+                className={`w-full py-3 px-6 rounded-lg font-semibold transition-all duration-300 ${isSubmitted
                     ? 'bg-green-600 text-white'
                     : 'bg-gradient-to-r from-blue-600 to-purple-600 text-white hover:shadow-lg transform hover:scale-105'
-                }`}
+                  }`}
               >
                 {isSubmitted ? (
                   <span className="flex items-center justify-center">
