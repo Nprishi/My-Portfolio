@@ -1,6 +1,8 @@
 import React from 'react';
 import { Code, Heart, Zap, GraduationCap, MapPin, Quote } from 'lucide-react';
 import { useIntersectionObserver } from '../hooks/useIntersectionObserver';
+import abrishiImg from "../assets/abrishi.jpg";
+
 
 const About: React.FC = () => {
   const { ref, hasIntersected } = useIntersectionObserver({ threshold: 0.1 });
@@ -22,7 +24,7 @@ const About: React.FC = () => {
             hasIntersected ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'
           }`}>
             <img 
-              src="/public/Abrishi.jpg" 
+              src={abrishiImg}
               alt="Developer workspace" 
               className="rounded-2xl shadow-2xl mb-8"
             />

@@ -1,5 +1,7 @@
 import React from 'react';
 import { ArrowDown, Github, Linkedin, Mail, Download } from 'lucide-react';
+import prishiImg from "../assets/prishi.jpg";
+
 
 const Hero: React.FC = () => {
   return (
@@ -16,7 +18,7 @@ const Hero: React.FC = () => {
           {/* Profile Picture Placeholder */}
           <div>
             <img
-              src="/public/Prishi.jpg"  // Replace with your actual image path or URL
+              src={prishiImg}  // Replace with your actual image path or URL
               alt="Profile"
               className="w-60 h-70 mx-auto mb-10 mt-20 rounded-full flex items-center justify-center animate-fade-in-up hero-photo"   />
           </div>
